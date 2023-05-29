@@ -1,7 +1,25 @@
 import {ExcelComponet} from '@core/ExcelComponent'
 
 export class Toolbar extends ExcelComponet {
+    static className = 'excel__toolbar'
  toHTML() {
-        return '<h1>Toolbar</h1>'
+        return ` <div class="button">
+                <i class="material-symbols-outlined">format_align_left</i>
+            </div>
+              <div class="button">
+                <i class="material-symbols-outlined">format_align_center</i>
+            </div>
+              <div class="button">
+                <i class="material-symbols-outlined">format_align_right</i>
+            </div>
+              <div class="button">
+                <i class="material-symbols-outlined">format_bold</i>
+            </div>
+              <div class="button">
+                <i class="material-symbols-outlined">format_italic</i>
+            </div>
+              <div class="button">
+                <i class="material-symbols-outlined">format_underlined</i>
+            </div>`
     }
 }
