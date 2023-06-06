@@ -62,9 +62,7 @@ export function createTable(rowsCount = 15) {
             .fill('')
             .map(toCell)
             .join('')
-
         rows.push(createRow(i + 1, cells))
     }
-
     return rows.join('')
 }

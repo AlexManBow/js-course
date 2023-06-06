@@ -8,7 +8,7 @@ export class Table extends ExcelComponet {
 
     constructor($root) {
         super($root, {
-            listeners: ['mousedown'] // , 'mousemove', 'mouseup']
+            listeners: ['mousedown']
         });
     }
 
