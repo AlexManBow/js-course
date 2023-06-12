@@ -2,13 +2,15 @@ import {ExcelComponet} from '@core/ExcelComponent'
 
 export class Toolbar extends ExcelComponet {
     static className = 'excel__toolbar'
-    constructor($root) {
+
+    constructor($root, options) {
         super($root, {
             name: 'Toolbar',
-            listeners: ['click']
-
-        });
+            listeners: ['click'],
+            ...options
+        })
     }
+
     toHTML() {
         return ` <div class="button">
                 <i class="material-symbols-outlined">format_align_left</i>
